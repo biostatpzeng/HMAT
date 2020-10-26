@@ -28,6 +28,7 @@ $p_TWAS
 ```
 
 For GWAS with only summary statistics
+```ruby
 source("HMPAT_function.R")
 y <- read.table("y.txt",sep=""),head=F)[,1]
 G2 <- read.table("snp_gwas.txt",head=F)
@@ -42,6 +43,7 @@ $p_HMPAT
 
 $p_TWAS
 [1] 0.7421750 0.6300880 0.5776437 0.7748156 0.5727138 0.7264019 0.7925278
+```
 
 ## Cite
 [Ping Zeng](https://github.com/biostatpzeng) and Xiang Zhou. Aggregating multiple expression prediction models improves the power of transcriptome wide association studies, 2020.
