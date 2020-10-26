@@ -16,9 +16,10 @@ source("HMPAT_function.R")
 y <- read.table("y.txt",sep=""),head=F)[,1]
 G2 <- read.table("snp_gwas.txt",head=F)
 weight <- matrix(runif(m*7),m,7)
-# Here, we assume, for simplicity, that these simulated weights are estimated from seven various gene expression prediction models.
-# Then, actually, there are seven various TWAS analyses. For each TWAS, we can obtain its p value to evaluate the significance of the gene.
-# Finally, we combine these p values into a single one using HMPAT.
+
+# Here, we assume, for simplicity, that these simulated weights are estimated from seven various gene expression
+# prediction models. Then, actually, there are seven various TWAS analyses. For each TWAS, we can obtain its p value
+# to evaluate the significance of the gene. Finally, we combine these p values into a single one using HMPAT.
 
 HMPAT_individual(y,G2,weight,outcome="B")
 
@@ -36,9 +37,9 @@ y <- read.table("y.txt",sep=""),head=F)[,1]
 G2 <- read.table("snp_gwas.txt",head=F)
 weight <- matrix(runif(m*7),m,7)
 
-# Here, we assume, for simplicity, that these simulated weights are estimated from seven various gene expression prediction models.
-# Then, actually, there are seven various TWAS analyses. For each TWAS, we can obtain its p value to evaluate the significance of the gene.
-# Finally, we combine these p values into a single one using HMPAT.
+# Here, we assume, for simplicity, that these simulated weights are estimated from seven various gene expression
+# prediction models. Then, actually, there are seven various TWAS analyses. For each TWAS, we can obtain its p value
+# to evaluate the significance of the gene. Finally, we combine these p values into a single one using HMPAT.
 
 Z = rep(dim(G2)[2])
 for (j in 1:dim(G2)[2]){Z[j] <- summary(glm(y~G2[,j],family = gaussian))$coef[2,3]}
