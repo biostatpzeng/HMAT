@@ -54,7 +54,7 @@ $p_TWAS
 ```
 
 ## Cite
-[Ping Zeng](https://github.com/biostatpzeng) and Xiang Zhou (2020). Aggregating multiple expression prediction models improves the power of transcriptome wide association studies.
+[Ping Zeng](https://github.com/biostatpzeng) and Xiang Zhou (2021). Aggregating multiple expression prediction models improves the power of transcriptome wide association studies. Human Molecular Genetics.
 ## Contact
 We are very grateful to any questions, comments, or bugs reports; and please contact [Ping Zeng](https://github.com/biostatpzeng) via zpstat@xzhmu.edu.cn.
 
